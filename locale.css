@@ -135,8 +135,8 @@ html:lang(ja) .hero h1 {
 }
 @media (max-width: 760px) {
   .header { gap: 8px; padding: 0 4%; }
-  .brand { font-size: clamp(20px, 5.8vw, 26px); letter-spacing: clamp(3px, .9vw, 7px); }
-  .brand span { font-size: 6px; letter-spacing: 1.3px; }
+  .brand, .hanami-logo { font-size: clamp(16px, 4.5vw, 22px); letter-spacing: clamp(0.14em, 2vw, 0.24em); }
+  .brand span, .hanami-logo-subtitle { font-size: 6px; letter-spacing: 1.3px; }
   .header-controls { gap: 9px; }
   .language-picker select {
     min-width: 58px;
@@ -147,11 +147,12 @@ html:lang(ja) .hero h1 {
   .language-picker::after { right: 8px; width: 4px; height: 4px; }
   .menu-toggle { gap: 5px; font-size: 11px; }
   .zoom {
-    right: 7px;
-    bottom: 7px;
-    max-width: calc(100% - 14px);
-    padding: 4px 7px;
-    font-size: 9px;
+    right: 5px;
+    bottom: 5px;
+    max-width: calc(100% - 10px);
+    padding: 3px 6px;
+    font-size: clamp(7.5px, 2vw, 9px);
+    white-space: nowrap;
   }
   html:lang(zh-CN) h2,
   html:lang(ja) h2 {

@@ -1,1 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#52604b"/><text x="32" y="47" text-anchor="middle" font-family="Georgia,serif" font-size="44" fill="#f8f5eb">H</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- Nền đen nhám kim loại cao cấp (Matte Charcoal to Deep Black) -->
+    <linearGradient id="matte-surface" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c1d20"/>
+      <stop offset="50%" stop-color="#141517"/>
+      <stop offset="100%" stop-color="#0b0c0e"/>
+    </linearGradient>
+
+    <!-- Kết cấu nhám mịn (Micro-grain Matte Finish) -->
+    <filter id="matte-grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="2" result="noise"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.05 0" in="noise" result="grain"/>
+      <feBlend mode="screen" in="SourceGraphic" in2="grain"/>
+    </filter>
+
+    <!-- Hắt sáng vàng ấm trên & dưới như dải LED bảng hiệu thực tế -->
+    <linearGradient id="edge-wash" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffb84d" stop-opacity="0.32"/>
+      <stop offset="14%" stop-color="#ffb84d" stop-opacity="0"/>
+      <stop offset="86%" stop-color="#ff9a1f" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ff9a1f" stop-opacity="0.38"/>
+    </linearGradient>
+
+    <!-- Quầng sáng ấm khuếch tán sau chữ H -->
+    <radialGradient id="h-ambient" cx="50%" cy="50%" r="42%">
+      <stop offset="0%" stop-color="#ffa631" stop-opacity="0.26"/>
+      <stop offset="65%" stop-color="#ff8c00" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ff8c00" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Mặt chữ H phát sáng vàng ngà ánh kim ấm áp -->
+    <linearGradient id="h-face" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#fff8ed"/>
+      <stop offset="100%" stop-color="#ffeacc"/>
+    </linearGradient>
+
+    <!-- Hiệu ứng tỏa sáng ấm rực rỡ (Warm Ambient Glow) -->
+    <filter id="h-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="0" stdDeviation="1.5" flood-color="#ffb33e" flood-opacity="0.85"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#ff9015" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- 1. Tấm biển đen nhám bo góc tinh xảo -->
+  <rect width="64" height="64" rx="13" fill="url(#matte-surface)" filter="url(#matte-grain)"/>
+
+  <!-- 2. Đường viền kim loại vát cạnh tinh tế -->
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="12.25" fill="none" stroke="#2c2e33" stroke-width="0.8"/>
+
+  <!-- 3. Ánh sáng vàng ấm hắt mép trên và mép dưới biển hiệu -->
+  <rect width="64" height="64" rx="13" fill="url(#edge-wash)"/>
+
+  <!-- 4. Quầng sáng ấm nhẹ phía sau chữ H -->
+  <rect width="64" height="64" rx="13" fill="url(#h-ambient)"/>
+
+  <!-- 5. Chữ H thanh mảnh - Lớp hào quang hắt sáng ấm (Backlit Halo) -->
+  <path d="M 19.2 14 h 2.6 v 16.7 h 20.4 v -16.7 h 2.6 v 36 h -2.6 v -16.7 h -20.4 v 16.7 h -2.6 Z"
+        fill="#ffa426" opacity="0.65" filter="url(#h-glow)"/>
+
+  <!-- 6. Chữ H thanh mảnh - Lớp mặt chữ phát sáng sắc nét (Core Sharp Letter) -->
+  <path d="M 19.2 14 h 2.6 v 16.7 h 20.4 v -16.7 h 2.6 v 36 h -2.6 v -16.7 h -20.4 v 16.7 h -2.6 Z"
+        fill="url(#h-face)"/>
+</svg>

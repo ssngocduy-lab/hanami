@@ -1,6 +1,6 @@
 window.HANAMI_I18N = {
   vi: {
-    metaTitle: "Hanami — Dalat Boutique Hotel | Giữa những mùa hoa",
+    metaTitle: "Hanami — Dalat | Hotel giữa những mùa hoa",
     metaDescription: "Khám phá ý tưởng Hanami — Dalat Boutique Hotel: không gian nghỉ ấm áp, phòng đôi, phòng Family và Penthouse tại Đà Lạt.",
     skipLink: "Đến nội dung chính",
     brandHomeAria: "Hanami — Trang đầu",
@@ -117,7 +117,7 @@ window.HANAMI_I18N = {
     }
   },
   en: {
-    metaTitle: "Hanami — Dalat Boutique Hotel | Among the Flowers",
+    metaTitle: "Hanami — Dalat | Hotel among the Flowers",
     metaDescription: "Explore Hanami — Dalat Boutique Hotel, a warm retreat with double rooms, family rooms and a three-bedroom penthouse in Dalat.",
     skipLink: "Skip to main content",
     brandHomeAria: "Hanami — Home",
@@ -232,8 +232,8 @@ window.HANAMI_I18N = {
       adults: "{count} adults", children: "{count} children", units: "{count} rooms / units",
       note: "Preview only — your details have not been sent to Hanami and no booking has been confirmed."
     }
-  },  zh: {
-    metaTitle: "Hanami — 大叻精品酒店 | 花间小住",
+  }, zh: {
+    metaTitle: "Hanami — Dalat| 花丛中的酒店",
     metaDescription: "探索 Hanami 大叻精品酒店的设计构想：温暖的双人客房、家庭客房，以及配有三间双人卧室的顶层套房。",
     skipLink: "跳至主要内容",
     brandHomeAria: "Hanami — 首页",
@@ -350,7 +350,7 @@ window.HANAMI_I18N = {
     }
   },
   ja: {
-    metaTitle: "Hanami — ダラット・ブティックホテル | 花の季節に",
+    metaTitle: "Hanami — Dalat | 花の中のホテル",
     metaDescription: "Hanami ダラット・ブティックホテルのデザイン構想。ダブルルーム、ファミリールーム、寝室3室を備えたペントハウスをご紹介します。",
     skipLink: "本文へ移動",
     brandHomeAria: "Hanami — ホーム",
