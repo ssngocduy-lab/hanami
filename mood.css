@@ -1,0 +1,49 @@
+/* A soft cherry-blossom hillside forms the atmospheric backdrop. */
+body{background:#242d2b;isolation:isolate}
+body::before{content:"";position:fixed;inset:-18px;background:linear-gradient(105deg,rgba(24,34,29,.38),rgba(50,30,42,.39)),url('assets/cherry-hill-bg.webp') center/cover no-repeat;z-index:-1;pointer-events:none}
+main{position:relative}
+.header{background:rgba(38,51,43,.96);border-color:#e8e8d530;color:#fbf4e8;box-shadow:0 6px 25px #18231d22}
+.menu-toggle{color:#fbf4e8}
+.header nav .nav-book{border-color:#d1c1ab}.header nav a:hover,.header nav a[aria-current]{color:#f8d0c9;border-color:#f8d0c9}
+.hero{width:calc(100% - 7%);max-width:1380px;margin:46px auto 0;min-height:730px;background:rgba(35,42,38,.2);box-shadow:0 20px 60px #101a1773}
+.hero-copy{background:linear-gradient(90deg,rgba(24,35,30,.77),rgba(36,44,37,.60))}
+.hero-copy{color:#fff8ec}
+.hero-copy p,.hero .text-link{color:#f0e7dc}
+.hero h1 em{color:#f6c5bc}
+.hero .flower{color:#f4c8bd}
+.hero .button{background:#d8998e;border-color:#d8998e;color:#282f2a;font-weight:600}
+.hero .button:hover{background:#f0b6a8}
+.hero .text-link{border-color:#f2ddd2}
+.motto{color:#fff5eb;background:rgba(31,41,37,.67);border-color:#ffffff3d;max-width:1380px;margin:auto}
+.motto i{color:#f8c9ba}
+.section{width:calc(100% - 7%);max-width:1380px;margin:78px auto;box-shadow:0 18px 55px #14201852}
+.section{backdrop-filter:blur(7px)}
+.about{background:rgba(202,184,157,.72);color:#302b27}
+.about .eyebrow,.about figcaption,.about-copy>p:not(.eyebrow),.about .spaces p{color:#403a34}
+.about .spaces li{border-color:#594e4338}
+.about .spaces li>span{color:#72534b}
+.exterior{background:rgba(42,70,88,.82);color:#f9f1e4}
+.exterior h2 em{color:#f5b5ab}
+.exterior p,.exterior figcaption{color:#e3e7dc}
+.exterior .detail-photo img{border:1px solid #ffffff33}
+.rooms{background:rgba(92,38,55,.86);color:#fff1e8}
+.rooms h2 em,.rooms .room-top>span{color:#f7b8aa}
+.rooms p,.rooms figcaption,.rooms .room-card .room-details{color:#f3e2df}
+.rooms .room-types,.rooms .room-card+.room-card{border-color:#f4dedc55}
+.rooms .room-card a{border-color:#eec6be91}
+.booking{background:rgba(24,47,67,.88);color:#fff2e6}
+.booking h2 em{color:#f7bfb5}
+.booking-copy>p,.booking .form-disclaimer,.booking .booking-note p{color:#f3e9df!important}
+.booking .booking-note>span{color:#f6b5a8}
+.booking .demo-note{border-color:#e7ceca66!important}
+.booking .demo-note strong{color:#ffd0c4}
+.booking form label{color:#fff2e6}
+.booking form label>span{color:#ffbcb0}
+.booking input,.booking select,.booking textarea{background:#fffaf2;border-color:#e1cdc7}
+.booking .button{background:#e4a79c;border-color:#e4a79c;color:#2d3030;font-weight:600}
+.booking .button:hover{background:#f3c0b5}
+.booking .request-summary{color:#2b2b2b}
+.booking .request-summary p{color:#4b4b47}
+footer{background:#263b31}
+@media(max-width:1000px){.hero{margin-top:25px}.section{margin:54px 3%}}
+@media(max-width:760px){.header nav{background:#263b31;border-color:#ffffff3d}.hero{width:100%;margin:0;background:rgba(35,42,38,.28);min-height:0}.hero-copy{background:linear-gradient(130deg,rgba(25,35,29,.81),rgba(50,41,48,.62))}.hero-photo{margin:0 5% 22px}.section{width:auto;margin:25px 12px;padding:65px 6%}.motto{padding:20px 5%}.booking .demo-note{border-color:#e7ceca66}}
