@@ -1,6 +1,6 @@
 const config = window.HANAMI;
 const translations = window.HANAMI_I18N;
-const languageTags = { vi: 'vi', en: 'en', zh: 'zh-CN', ja: 'ja' };
+const languageTags = { vi: 'vi', en: 'en', zh: 'zh-CN', ja: 'ja', ko: 'ko' };
 const languageSelect = document.querySelector('#language-select');
 const types = document.querySelector('#room-types');
 const gallery = document.querySelector('#room-gallery');

@@ -92,15 +92,23 @@ html:lang(ja) {
   --serif: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif;
   --sans: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans CJK JP", sans-serif;
 }
+html:lang(ko) {
+  --serif: "Noto Serif KR", "Nanum Myeongjo", "Batang", serif;
+  --sans: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  word-break: keep-all;
+}
 html:lang(zh-CN) h1,
 html:lang(ja) h1,
+html:lang(ko) h1,
 html:lang(zh-CN) h2,
-html:lang(ja) h2 {
+html:lang(ja) h2,
+html:lang(ko) h2 {
   letter-spacing: .015em;
   line-height: 1.32;
 }
 html:lang(zh-CN) .hero h1,
-html:lang(ja) .hero h1 {
+html:lang(ja) .hero h1,
+html:lang(ko) .hero h1 {
   font-size: clamp(42px, 4.8vw, 76px);
 }
 @media (max-width: 1050px) {
@@ -155,11 +163,13 @@ html:lang(ja) .hero h1 {
     white-space: nowrap;
   }
   html:lang(zh-CN) h2,
-  html:lang(ja) h2 {
+  html:lang(ja) h2,
+  html:lang(ko) h2 {
     font-size: clamp(31px, 8.2vw, 40px);
   }
   html:lang(zh-CN) .hero h1,
-  html:lang(ja) .hero h1 {
+  html:lang(ja) .hero h1,
+  html:lang(ko) .hero h1 {
     font-size: clamp(38px, 10.5vw, 52px);
   }
 }
